@@ -50,6 +50,9 @@ export default {
     })
   },
   created() {
+
+    this.$store.dispatch('startTask')
+    
     // Register the response handler that is defined above to handle any
     // key down events.
     window.addEventListener('keydown', this.response_handler)
